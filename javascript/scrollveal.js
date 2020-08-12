@@ -62,7 +62,7 @@ ScrollReveal().reveal(".contact-wrapper", {
   delay: 600,
 });
 
-ScrollReveal().reveal(".fa", {
+ScrollReveal().reveal(".social-link", {
   ...defaultProps,
   delay: 600,
   interval: 100,
