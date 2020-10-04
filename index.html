@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
     <!-- Title -->
-    <title>Anil Seervi | Developer</title>
+    <title>Anil Seervi | Front-End Developer, Designer</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta
       name="keywords"
@@ -14,6 +17,25 @@
     <!-- Improve your SEO by adding a small descrption of you -->
     <meta name="description" content="Portfolio Website of Anil Seervi" />
     <!-- link tags -->
+    <script async src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+    <!--  Preconnect to the fonts’ origin. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="apple-touch-icon"
@@ -26,12 +48,6 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon-16x16.png"
-    />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="./assets/site.webmanifest" />
 
@@ -39,18 +55,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
-      async
+      defer
       src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-5"
     ></script>
-    <script>
+    <script defer>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
