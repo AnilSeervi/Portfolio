@@ -1,0 +1,39 @@
+{
+  "name": "Anil Seervi | Front-End Developer/Designer Portfolio",
+  "short_name": "Anil Seervi | Portfolio",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#8e2de2",
+  "theme_color": "#4a00e0",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./assets/icons/favicon.ico",
+      "sizes": "48x48"
+    },
+    {
+      "src": "./assets/icons/favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}
