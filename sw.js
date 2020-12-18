@@ -2,7 +2,7 @@ const staticCacheName = "site-static-v1";
 const dynamicCacheName = "site-dynamic-v1";
 const assets = [
   "/",
-  "./index.html",
+  "/index.html",
   "/assets/icons/favicon-16x16.png",
   "/assets/icons/favicon-32x32.png",
   "/assets/icons/android-chrome-192x192.png",
