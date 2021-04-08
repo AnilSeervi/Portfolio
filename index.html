@@ -97,7 +97,7 @@
           I Like to design stuff with code.
         </h1>
         <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Know More</a>
+          <a class="cta-btn cta-btn--hero" href="#projects">My Projects</a>
         </p>
       </section>
       <a href="#about" class="scroll-down-link">
@@ -137,11 +137,11 @@
 
             <span class="about-wrapper__cta">
               <a
-                href="https://giphy.com/gifs/U7DHVvniLOwOvCzVCN/html5"
+                href="https://github.com/AnilSeervi"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="cta-btn cta-btn--resume"
-                >View Resume</a
+                >View My GitHub</a
               >
             </span>
           </div>
@@ -162,12 +162,13 @@
                 A minimal portfolio template for Developers.
               </p>
               <p class="project-wrapper__text-info">
-                It's a fully responsive Portfolio template for Developers
-                developed with just HTML5, CSS3 and Vanilla JavaScript.
+                It's a fully responsive Portfolio template for Developers with
+                fully documented effortless configuration to get you up and
+                running with your own Portfolio Website.
               </p>
               <div class="project-wrapper__text-btns">
                 <a
-                  href="https://anilseervi.github.io/DevFolio/"
+                  href="https://devfolio.js.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="cta-btn cta-btn--hero cta-btn--projects"
@@ -184,13 +185,64 @@
             </div>
             <div class="project-wrapper__image">
               <a
-                href="https://anilseervi.github.io/DevFolio/"
+                href="https://devfolio.js.org"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div class="thumbnail rounded">
                   <img
                     src="./assets/DevFolio.jpg"
+                    class="img-fluid"
+                    alt="Project Image"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Recipes Counter</h3>
+              <p class="project-wrapper__text-info">
+                A full fledged
+                <abbr title="Progressive Web App">PWA</abbr>
+                firebase application.
+              </p>
+              <p class="project-wrapper__text-info">
+                A simple full-stack
+                <abbr title="Progressive Web App">PWA</abbr> developed for my
+                academics. It involves features such as authentication using
+                email and password, involves
+                <abbr title="create, read, update and delete">CRUD</abbr>
+                operations and also works offline.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://recipes-counter.web.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a
+                  href="https://github.com/AnilSeervi/Recipes-Counter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+            <div class="project-wrapper__image">
+              <a
+                href="https://recipes-counter.web.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/recipes-counter.webp"
                     class="img-fluid"
                     alt="Project Image"
                   />
@@ -489,7 +541,7 @@
         </div>
         <hr />
         <p class="footer__text">
-          &copy; 2020 - Template by
+          &copy; <span id="year"></span> - Template by
           <a
             href="https://github.com/AnilSeervi"
             target="_blank"
@@ -500,6 +552,9 @@
       </div>
     </footer>
     <!-- END Footer Section -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="./javascript/app.js"></script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
