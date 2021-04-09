@@ -1,5 +1,5 @@
-const staticCacheName = "site-static-v1";
-const dynamicCacheName = "site-dynamic-v1";
+const staticCacheName = "site-static-v2";
+const dynamicCacheName = "site-dynamic-v2";
 const assets = [
   "/Portfolio",
   "/Portfolio/index.html",
@@ -11,6 +11,7 @@ const assets = [
   "/Portfolio/assets/icons/apple-touch-icon.png",
   "/Portfolio/assets/icons/maskable_icon.png",
   "/Portfolio/assets/DevFolio.jpg",
+  "/Portfolio/assets/recipes-counter.webp",
   "/Portfolio/assets/Gradient-Picker.jpg",
   "/Portfolio/assets/Neumorphism-Analog-Clock.jpg",
   "/Portfolio/assets/Neumorphism-Digital-Clock.jpg",
