@@ -1,0 +1,54 @@
+// Section
+section {
+  padding: 5rem 0rem;
+
+  @include respond(phone) {
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .row {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    padding: 0 1.5rem;
+    @include respond(phone) {
+      padding: 0;
+    }
+    & p + p {
+      margin-top: 1rem;
+    }
+    & span {
+      margin-top: 2rem;
+    }
+  }
+}
+.container {
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 1140px;
+  @include respond(tab-land) {
+    max-width: 960px;
+    width: 100%;
+  }
+  @include respond(tab-port) {
+    max-width: 720px;
+    width: 100%;
+    justify-content: center;
+  }
+  @include respond(tab-port-sm) {
+    max-width: 720px;
+    width: 100%;
+  }
+  @include respond(phone) {
+    max-width: 540px;
+    width: 100%;
+  }
+}
