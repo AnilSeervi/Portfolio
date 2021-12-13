@@ -1,0 +1,127 @@
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  line-height: 1.2;
+  position: relative;
+  animation: hidden 1000ms linear forwards;
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  /* background: url("/src/assets/[your-image].png");
+    background-position: center;
+    background-size: cover; */
+
+  @include respond(tab-port) {
+    justify-content: center;
+  }
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+    span {
+      margin: 0;
+      display: inline-block;
+    }
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.scroll-down-link {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  &::before,
+  &::after {
+    height: 10px;
+    width: 10px;
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid $secondary-color;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: none;
+    border-left: none;
+    animation: scroll-down 1s ease-in-out infinite;
+  }
+  &::after {
+    top: 30%;
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes hidden {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
