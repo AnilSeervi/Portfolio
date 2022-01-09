@@ -3,7 +3,7 @@ const defaultProps = {
   easing: "cubic-bezier(0.5, 0, 0, 1)",
   distance: "30px",
   origin: "bottom",
-  duration: 1000,
+  duration: 800,
   desktop: true,
   mobile: true,
 };
@@ -45,21 +45,21 @@ ScrollReveal().reveal(".about-wrapper__image", {
 
 ScrollReveal().reveal(".about-wrapper__info", {
   ...defaultProps,
-  duration: 1200,
-  delay: 1000,
+  duration: 1000,
+  delay: 800,
   origin: window.innerWidth > 768 ? "left" : "top",
 });
 
 /* Projects Section */
 ScrollReveal().reveal(".project-wrapper__text", {
   ...defaultProps,
-  delay: 600,
+  delay: 200,
   origin: window.innerWidth > 768 ? "left" : "bottom",
 });
 
 ScrollReveal().reveal(".project-wrapper__image", {
   ...defaultProps,
-  delay: 1000,
+  delay: 400,
   origin: window.innerWidth > 768 ? "right" : "bottom",
 });
 
