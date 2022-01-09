@@ -9,7 +9,8 @@
   overflow: hidden;
   border-radius: 3px;
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), -1px -1px 3px #ffffff;
     @include respond(phone) {
       box-shadow: none;
@@ -73,7 +74,8 @@
     // Responsive Button hero style
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     -webkit-text-fill-color: $white-color;
     text-decoration: none;
 
@@ -97,7 +99,8 @@
     background: $white-color;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $secondary-color;
     text-decoration: none;
     box-shadow: none;
@@ -127,7 +130,8 @@
     transform: translate(-98%, -30%) rotate(45deg);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), -1px -1px 3px #ffffff;
 
     &::after {

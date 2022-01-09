@@ -72,7 +72,7 @@
   </head>
   <body>
     <!-- Hero Section -->
-    <div id="hero">
+    <main id="hero">
       <section class="container">
         <h1 class="hero-title">
           Hi, my name is <span class="text-color-main name">Anil Seervi</span>
@@ -83,10 +83,10 @@
           <a class="cta-btn cta-btn--hero" href="#projects">My Projects</a>
         </p>
       </section>
-      <a href="#about" class="scroll-down-link">
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down-link">
         <div class="scroll-down"></div
       ></a>
-    </div>
+    </main>
     <!-- /END Hero Section -->
     <!-- About Section -->
     <section id="about">
@@ -99,6 +99,8 @@
               src="./assets/profile.jpg"
               alt="Profile Image"
               loading="lazy"
+              width="350"
+              height="350"
             />
           </div>
           <div class="about-wrapper__info">
@@ -139,7 +141,7 @@
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">DevFolio</h3>
               <p class="project-wrapper__text-info">
@@ -183,10 +185,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Recipes Counter</h3>
               <p class="project-wrapper__text-info">
@@ -234,10 +236,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">QP Hoard</h3>
               <p class="project-wrapper__text-info">
@@ -284,10 +286,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Atmos</h3>
               <p class="project-wrapper__text-info">
@@ -332,10 +334,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Pomodorox</h3>
               <p class="project-wrapper__text-info">
@@ -379,10 +381,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">NeumiKeyboard</h3>
               <p class="project-wrapper__text-info">
@@ -425,10 +427,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Gradient Generator</h3>
               <p class="project-wrapper__text-info">
@@ -471,10 +473,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">NeumiDigiClock</h3>
               <p class="project-wrapper__text-info">
@@ -517,10 +519,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">NeumiAnalogClock</h3>
               <p class="project-wrapper__text-info">
@@ -563,10 +565,10 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
-          <div class="row">
+          <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">MiniFolio</h3>
               <p class="project-wrapper__text-info">
@@ -609,7 +611,7 @@
                 </div>
               </a>
             </div>
-          </div>
+          </article>
           <!-- /END Project -->
         </div>
       </div>
@@ -631,9 +633,9 @@
     </section>
     <!-- END Contact Section -->
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer>
       <div class="container">
-        <a href="#hero" aria-hidden="true" class="back-to-top">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
           <svg
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -648,7 +650,7 @@
             />
           </svg>
         </a>
-        <div class="social-links">
+        <nav class="social-links">
           <a
             href="https://twitter.com/linASeervi"
             target="_blank"
@@ -739,7 +741,7 @@
               />
             </svg>
           </a>
-        </div>
+        </nav>
         <hr />
         <p class="footer__text">
           &copy; <span id="year"></span> - Template by

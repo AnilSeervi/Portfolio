@@ -1,16 +1,16 @@
-.footer {
+footer {
   background-color: $dark-grey;
   padding: 4.8rem 0;
-  &__text {
+  .footer__text {
     font-size: 1.3rem;
-    color: darken($white-color, 50%);
+    color: darken($white-color, 33%);
     a {
       font-size: 1.3rem;
-      color: darken($white-color, 50%);
+      color: darken($white-color, 33%);
       transition: all 0.2s ease-in-out;
       display: inline-block;
       &:hover,
-      &:active {
+      &:focus {
         color: $primary-color;
       }
     }
@@ -39,13 +39,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: $white-color;
     width: 5rem;
     height: 5rem;
     margin: $default-font-size $default-font-size;
     transition: all ease-in-out 0.2s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       transform: scale(1.1) translateY(-2px);
       .svg-twitter {
         fill: #1da1f2;
@@ -70,7 +72,8 @@
   margin: 1rem 0 $default-font-size;
   transition: all 200ms ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateY(-2px);
   }
 }
