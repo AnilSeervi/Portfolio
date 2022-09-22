@@ -1,0 +1,16 @@
+.hover-card {
+	transition: transform 100ms ease-out;
+	--scale: 1;
+	--x-pos: 0;
+	--y-angle: calc(var(--x-pos) * 1deg);
+
+	--y-pos: 0;
+	--x-angle: calc(var(--y-pos) * 1deg);
+
+	transform: scale(var(--scale)) perspective(200px) rotateY(var(--y-angle))
+		rotateX(var(--x-angle));
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	background: linear-gradient(to bottom right, #9847ff 0%, #c447ff 100%);
+}

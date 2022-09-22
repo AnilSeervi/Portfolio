@@ -1,14 +1,21 @@
 {
-  "name": "anil-seervi",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "sass": "^1.54.9",
-    "vite": "^3.1.2"
-  },
-  "dependencies": {}
+	"name": "anil-seervi",
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "eslint .",
+		"pret": "prettier -c ."
+	},
+	"devDependencies": {
+		"eslint": "^7.32.0 || ^8.2.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.25.2",
+		"prettier": "^2.7.1",
+		"sass": "^1.54.9",
+		"vite": "^3.1.2"
+	},
+	"dependencies": {}
 }
