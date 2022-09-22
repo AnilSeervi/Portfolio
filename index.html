@@ -1,763 +1,890 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title -->
-    <title>Anil Seervi | Front-End Developer</title>
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta
-      name="keywords"
-      content="[Anil Seervi], Anil seervi, Portfolio, Developer, Designer, Front-End Developer, JavaScript, React, HTML5, CSS3"
-    />
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="title" content="Anil Seervi | Front-End Developer" />
-    <meta
-      name="description"
-      content="Portfolio Website of Anil Seervi, Front-End Developer, Designer"
-    />
-    <meta name="theme-color" content="#4a00e0" />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://anilseervi.pages.dev/" />
-    <meta property="og:title" content="Anil Seervi | Front-End Developer" />
-    <meta
-      property="og:description"
-      content="Portfolio Website of Anil Seervi | Front-End Developer, Designer"
-    />
-    <meta
-      property="og:image"
-      content="https://anilseervi.vercel.app/assets/Thumbnail.png"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- preconnect to google fonts for faster fetching of fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Title -->
+		<title>Anil Seervi | Front-End Developer</title>
+		<!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+		<meta
+			name="keywords"
+			content="[Anil Seervi], Anil seervi, Portfolio, Developer, Designer, Front-End Developer, JavaScript, TypeScript, React, Zenduty"
+		/>
+		<!-- Improve your SEO by adding a small descrption of you -->
+		<meta name="title" content="Anil Seervi | Front-End Developer" />
+		<meta
+			name="description"
+			content="Portfolio Website of Anil Seervi, Front-End Developer, Designer"
+		/>
+		<meta name="theme-color" content="#4a00e0" />
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://anilseervi.pages.dev/" />
+		<meta property="og:title" content="Anil Seervi | Front-End Developer" />
+		<meta
+			property="og:description"
+			content="Portfolio Website of Anil Seervi | Front-End Developer, Designer"
+		/>
+		<meta
+			property="og:image"
+			content="https://anilseervi.vercel.app/assets/Thumbnail.png"
+		/>
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://anilseervi.pages.dev" />
-    <meta
-      property="twitter:title"
-      content="Anil Seervi | Front-End Developer"
-    />
-    <meta
-      property="twitter:description"
-      content="Portfolio Website of Anil Seervi | Front-End Developer, Designer"
-    />
-    <meta
-      property="twitter:image"
-      content="https://anilseervi.vercel.app/assets/Thumbnail.png"
-    />
-    <!-- link tags -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/icons/apple-touch-icon.png"
-    />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <script src="./javascript/scrollreveal.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-5"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://anilseervi.pages.dev" />
+		<meta
+			property="twitter:title"
+			content="Anil Seervi | Front-End Developer"
+		/>
+		<meta
+			property="twitter:description"
+			content="Portfolio Website of Anil Seervi | Front-End Developer, Designer"
+		/>
+		<meta
+			property="twitter:image"
+			content="https://anilseervi.vercel.app/assets/Thumbnail.png"
+		/>
+		<!-- link tags -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/icons/apple-touch-icon.png"
+		/>
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+		<script src="./javascript/scrollreveal.min.js"></script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-5"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-      gtag("config", "UA-122228201-5");
-    </script>
-    <link rel="manifest" href="./manifest.json" />
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <main id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Anil Seervi</span>
-          <br />
-          I Like to design stuff with code.
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#projects">My Projects</a>
-        </p>
-      </section>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down-link">
-        <div class="scroll-down"></div
-      ></a>
-    </main>
-    <!-- /END Hero Section -->
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/profile.jpg"
-              alt="Profile Image"
-              loading="lazy"
-              width="350"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-              I am a self-taught Web Developer specialized in Design and the
-              Front-End Development.
-            </p>
-            <p class="about-wrapper__info-text">
-              I'm passionate about technology and enjoy nothing more than
-              learning the new trends and implementing it in the web development
-              to make life much easier and nicer.
-            </p>
-            <p class="about-wrapper__info-text">
-              Basically I like to code to develop some nice and cool looking
-              responsive Websites.
-            </p>
-            <p class="about-wrapper__info-text">
-              Feel free to reach out to me through any platform.
-            </p>
+			gtag('config', 'UA-122228201-5');
+		</script>
+		<link rel="manifest" href="./manifest.json" />
+	</head>
+	<body>
+		<!-- Hero Section -->
+		<main id="hero">
+			<section class="container">
+				<h1 class="hero-title">
+					Hi, my name is <span class="text-color-main name">Anil Seervi</span>
+					<br />
+					I Like to design stuff with code.
+				</h1>
+				<p class="hero-cta">
+					<a class="cta-btn cta-btn--hero" href="#projects">My Projects</a>
+				</p>
+			</section>
+			<a href="#about" class="scroll-down-link" aria-label="scroll-down-link">
+				<div class="scroll-down"></div
+			></a>
+		</main>
+		<!-- /END Hero Section -->
+		<!-- About Section -->
+		<section id="about">
+			<div class="container">
+				<h2 class="section-title">About Me</h2>
+				<div class="row about-wrapper">
+					<div class="about-wrapper__image">
+						<img
+							class="img-fluid"
+							src="./assets/profile.jpg"
+							alt="Profile Image"
+							loading="lazy"
+							width="350"
+						/>
+					</div>
+					<div class="about-wrapper__info">
+						<p class="about-wrapper__info-text">
+							I am a self-taught Web Developer specializing in Design and
+							Front-End Development.
+						</p>
+						<p class="about-wrapper__info-text">
+							I'm passionate about technology and enjoy nothing more than
+							learning the new trends and implementing the bleeding edge tech in
+							web development to make
+							<abbr title="User Experience">UX</abbr> and
+							<abbr title="Developer Experience">DX</abbr> better.
+						</p>
+						<p class="about-wrapper__info-text">
+							I'm mostly active on GitHub doing some Open-Sourcery stuff, so
+							come check me out there!
+						</p>
 
-            <span class="about-wrapper__cta">
-              <a
-                href="https://github.com/AnilSeervi"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="cta-btn cta-btn--resume"
-                >View My GitHub</a
-              >
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">DevFolio</h3>
-              <p class="project-wrapper__text-info">
-                A Modern Portfolio Template for Developers.
-              </p>
-              <p class="project-wrapper__text-info">
-                It's a fully responsive Portfolio template with thoroughly
-                documented setup to get you up and running with your own
-                Portfolio Website.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://devfolio.js.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/DevFolio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://devfolio.js.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/devfolio.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Recipes Counter</h3>
-              <p class="project-wrapper__text-info">
-                A Full-Stack Recipes logger Application.
-              </p>
-              <p class="project-wrapper__text-info">
-                Recipes Counter is also a
-                <abbr title="Progressive Web App">PWA</abbr> that lets its users
-                log food recipes for others to use. It features authentication
-                using email and password,
-                <abbr title="create, read, update, delete">CRUD</abbr>
-                operations and also works offline by caching(service-workers
-                API).
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://recipes-counter.web.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/Recipes-Counter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://recipes-counter.web.app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/recipes-counter.webp"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">QP Hoard</h3>
-              <p class="project-wrapper__text-info">
-                A Web App that hoards previous year question papers for
-                undergrads of BBA, BCA and BCom.
-              </p>
-              <p class="project-wrapper__text-info">
-                Full-fledged
-                <abbr title="Progressive Web App">PWA</abbr> developed using
-                React and Material-UI. Features routing, dynamic dark/light
-                display modes and offline working capabilities through service
-                workers API.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://qp.pages.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/QP-Hoard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://qp.pages.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/qphoard.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Atmos</h3>
-              <p class="project-wrapper__text-info">
-                Futuristic-UI Weather forecast App with weather-dynamic
-                background animations.
-              </p>
-              <p class="project-wrapper__text-info">
-                Features City search using Mapbox API, Weather Report from
-                OpenWeatherMap API and geolocation forecast with geolocation
-                API.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://atmos.pages.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/Atmos"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://atmos.pages.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/atmos.webp"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Pomodorox</h3>
-              <p class="project-wrapper__text-info">
-                A Fully Customizable Pomodoro Timer App to boost your
-                Productivity.
-              </p>
-              <p class="project-wrapper__text-info">
-                Hourglass concept design timer that let's you boost your
-                productivity using the pomodoro technique.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://pomodorox.pages.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/Pomodorox"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://pomodorox.pages.dev"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/pomodorox.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">NeumiKeyboard</h3>
-              <p class="project-wrapper__text-info">
-                A Neumorphism Design Working Keyboard.
-              </p>
-              <p class="project-wrapper__text-info">
-                It's a fully Working Neumorphism Design Keyboard available in
-                both light and dark mode.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://anilseervi.github.io/NeumiKeyboard/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/NeumiKeyboard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://anilseervi.github.io/NeumiKeyboard/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Working-Neumorphism-Keyboard.jpg"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Gradient Generator</h3>
-              <p class="project-wrapper__text-info">
-                A website for generating desired gradients.
-              </p>
-              <p class="project-wrapper__text-info">
-                You can generate both linear and radial gradients upto 3 colors
-                on this website.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://anilseervi.github.io/Gradient-Picker/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/Gradient-Picker"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://anilseervi.github.io/Gradient-Picker/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Gradient-Picker.jpg"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">NeumiDigiClock</h3>
-              <p class="project-wrapper__text-info">
-                A Neumorphism Design Digital Clock Website.
-              </p>
-              <p class="project-wrapper__text-info">
-                A Digital Clock Website with 12-hour and 24-hour display format
-                in both light and dark mode.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://anilseervi.github.io/NeumiDigiClock/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/NeumiDigiClock"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://anilseervi.github.io/NeumiDigiClock/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Neumorphism-Digital-Clock.jpg"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">NeumiAnalogClock</h3>
-              <p class="project-wrapper__text-info">
-                A Neumorphism Design Analog Clock Website.
-              </p>
-              <p class="project-wrapper__text-info">
-                A Analog Clock Website developed using HTML5, CSS3 and
-                VanillaJS, available in both light and dark mode.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://anilseervi.github.io/NeumiAnalogClock/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/NeumiAnalogClock"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://anilseervi.github.io/NeumiAnalogClock/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Neumorphism-Analog-Clock.jpg"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">MiniFolio</h3>
-              <p class="project-wrapper__text-info">
-                A Simple Portfolio website of mine.
-              </p>
-              <p class="project-wrapper__text-info">
-                I've used only HTML5 and CSS3 for this website. It has some cool
-                animation effects for hovers.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://anilseervi.github.io/Website/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a
-                  href="https://github.com/AnilSeervi/Website"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a
-                href="https://anilseervi.github.io/Website/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Website.jpg"
-                    class="img-fluid"
-                    alt="Project Image"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-        </div>
-      </div>
-    </section>
-    <!-- End Projects Section -->
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">Have something for me to build?</p>
-          <a
-            href="mailto:anil13112000@gmail.com"
-            class="cta-btn cta-btn--resume"
-            >Let's get building!</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- END Contact Section -->
-    <!-- Footer Section -->
-    <footer>
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top">
-          <svg
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 15l7-7 7 7"
-            />
-          </svg>
-        </a>
-        <nav class="social-links">
-          <a
-            href="https://twitter.com/linASeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              fill="#fff"
-              class="svg-twitter"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Twitter</title>
-              <path
-                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://dev.to/anilseervi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              class="svg-dev-to"
-              fill="#fff"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>dev.to</title>
-              <path
-                d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/anilseervi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              class="svg-linkedin"
-              fill="#fff"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>LinkedIn</title>
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://codepen.io/anilseervi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              class="svg-codepen"
-              fill="#fff"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Codepen</title>
-              <path
-                d="M21.838 8.445c0-.001-.001-.001 0 0l-.003-.004-.001-.001v-.001a.809.809 0 0 0-.235-.228l-9.164-6.08a.834.834 0 0 0-.898 0L2.371 8.214A.786.786 0 0 0 2 8.897v6.16a.789.789 0 0 0 .131.448v.001l.002.002.01.015v.002h.001l.001.001.001.001c.063.088.14.16.226.215l9.165 6.082a.787.787 0 0 0 .448.139.784.784 0 0 0 .45-.139l9.165-6.082a.794.794 0 0 0 .371-.685v-6.16a.793.793 0 0 0-.133-.452zm-9.057-4.172 6.953 4.613-3.183 2.112-3.771-2.536V4.273zm-1.592 0v4.189l-3.771 2.536-3.181-2.111 6.952-4.614zm-7.595 6.098 2.395 1.59-2.395 1.611v-3.201zm7.595 9.311-6.96-4.617 3.195-2.15 3.765 2.498v4.269zm.795-5.653-3.128-2.078 3.128-2.105 3.131 2.105-3.131 2.078zm.797 5.653v-4.27l3.766-2.498 3.193 2.15-6.959 4.618zm7.597-6.11-2.396-1.611 2.396-1.59v3.201z"
-              ></path>
-            </svg>
-          </a>
+						<span class="about-wrapper__cta">
+							<a
+								href="https://github.com/AnilSeervi"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="cta-btn cta-btn--resume"
+								>View My GitHub</a
+							>
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /END About Section -->
+		<!--Projects Section-->
+		<section id="projects">
+			<div class="container">
+				<div class="project-wrapper">
+					<h2 class="section-title dark-blue-text">Projects</h2>
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">DevFolio</h3>
+							<p class="project-wrapper__text-info">
+								A Modern Portfolio Template for Developers.
+							</p>
+							<p class="project-wrapper__text-info">
+								It's a fully responsive Portfolio template with thoroughly
+								documented setup to get you up and running with your own
+								Portfolio Website.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://devfolio.js.org"
+									target="_blank"
+									rel="noopener"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/DevFolio"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a href="https://devfolio.js.org" target="_blank" rel="noopener">
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/devfolio.png"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">Blog</h3>
+							<p class="project-wrapper__text-info">
+								Personal Blog site built with Gatsby.js rendering markdown files
+								as blog posts with RSS and PWA support.
+							</p>
+							<p class="project-wrapper__text-info">
+								Leave a comment using your GitHub account if you find any blog
+								post helpful.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://anil.gatsbyjs.io"
+									target="_blank"
+									rel="noopener"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/Blog"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a href="https://anil.gatsbyjs.io" target="_blank" rel="noopener">
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/blog.jpg"
+										class="img-fluid"
+										alt="Project
+									Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">Atmos</h3>
+							<p class="project-wrapper__text-info">
+								Futuristic-UI Weather forecast App with weather-dynamic
+								background animations.
+							</p>
+							<p class="project-wrapper__text-info">
+								Features City search using Mapbox API, Weather Report from
+								OpenWeatherMap API and geolocation forecast with geolocation
+								API.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://atmos.pages.dev"
+									target="_blank"
+									rel="noopener"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/Atmos"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a href="https://atmos.pages.dev" target="_blank" rel="noopener">
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/atmos.webp"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">QP Hoard</h3>
+							<p class="project-wrapper__text-info">
+								A Web App that hoards previous year question papers for
+								undergrads of BBA, BCA and BCom.
+							</p>
+							<p class="project-wrapper__text-info">
+								Full-fledged
+								<abbr title="Progressive Web App">PWA</abbr> developed using
+								React and Material-UI. Features routing, dynamic dark/light
+								display modes and offline working capabilities through service
+								workers API.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://qp.pages.dev"
+									target="_blank"
+									rel="noopener"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/QP-Hoard"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a href="https://qp.pages.dev" target="_blank" rel="noopener">
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/qphoard.png"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">Pomodorox</h3>
+							<p class="project-wrapper__text-info">
+								A Fully Customizable Pomodoro Timer App to boost your
+								Productivity.
+							</p>
+							<p class="project-wrapper__text-info">
+								Hourglass concept design timer that let's you boost your
+								productivity using the pomodoro technique.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://pomodorox.pages.dev"
+									target="_blank"
+									rel="noopener"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/Pomodorox"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a
+								href="https://pomodorox.pages.dev"
+								target="_blank"
+								rel="noopener"
+							>
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/pomodorox.png"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">Recipes Counter</h3>
+							<p class="project-wrapper__text-info">
+								A Full-Stack Recipes logger Application.
+							</p>
+							<p class="project-wrapper__text-info">
+								Recipes Counter is also a
+								<abbr title="Progressive Web App">PWA</abbr> that lets its users
+								log food recipes for others to use. It features authentication
+								using email and password,
+								<abbr title="create, read, update, delete">CRUD</abbr>
+								operations and also works offline by caching(service-workers
+								API).
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://recipes-counter.web.app"
+									target="_blank"
+									rel="noopener"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/Recipes-Counter"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a
+								href="https://recipes-counter.web.app"
+								target="_blank"
+								rel="noopener"
+							>
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/recipes-counter.webp"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">Inspirational-quotes</h3>
+							<p class="project-wrapper__text-info">
+								An <abbr title="Node Package Manager">NPM</abbr> package that
+								provides you with random inspirational quote.
+							</p>
+							<p class="project-wrapper__text-info">
+								Get inspired by using the package in your project to get a
+								random quote or the whole list of quotes.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://www.npmjs.com/package/@anilseervi/inspirational-quotes"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/inspirational-quotes"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a
+								href="https://www.npmjs.com/package/@anilseervi/inspirational-quotes"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/inspirational-quotes.jpg"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">Linksyard</h3>
+							<p class="project-wrapper__text-info">
+								A cute site like linktree with all my social links.
+							</p>
+							<p class="project-wrapper__text-info">
+								I was intrigued by the simplicity of linktree and wanted to make
+								my own so here it is.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://anil.pages.dev"
+									target="_blank"
+									rel="noopener"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/linksyard-react"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a href="https://anil.pages.dev" target="_blank" rel="noopener">
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/linksyard.jpg"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">NeumiKeyboard</h3>
+							<p class="project-wrapper__text-info">
+								A Neumorphism Design Working Keyboard.
+							</p>
+							<p class="project-wrapper__text-info">
+								It's a fully Working Neumorphism Design Keyboard available in
+								both light and dark mode.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://anilseervi.github.io/NeumiKeyboard/"
+									target="_blank"
+									rel="noopener"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/NeumiKeyboard"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a
+								href="https://anilseervi.github.io/NeumiKeyboard/"
+								target="_blank"
+								rel="noopener"
+							>
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/Working-Neumorphism-Keyboard.jpg"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">Gradient Generator</h3>
+							<p class="project-wrapper__text-info">
+								A website for generating desired gradients.
+							</p>
+							<p class="project-wrapper__text-info">
+								You can generate both linear and radial gradients upto 3 colors
+								on this website.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://anilseervi.github.io/Gradient-Picker/"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/Gradient-Picker"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a
+								href="https://anilseervi.github.io/Gradient-Picker/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/Gradient-Picker.jpg"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">NeumiDigiClock</h3>
+							<p class="project-wrapper__text-info">
+								A Neumorphism Design Digital Clock Website.
+							</p>
+							<p class="project-wrapper__text-info">
+								A Digital Clock Website with 12-hour and 24-hour display format
+								in both light and dark mode.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://anilseervi.github.io/NeumiDigiClock/"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/NeumiDigiClock"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a
+								href="https://anilseervi.github.io/NeumiDigiClock/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/Neumorphism-Digital-Clock.jpg"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">NeumiAnalogClock</h3>
+							<p class="project-wrapper__text-info">
+								A Neumorphism Design Analog Clock Website.
+							</p>
+							<p class="project-wrapper__text-info">
+								A Analog Clock Website developed using HTML5, CSS3 and
+								VanillaJS, available in both light and dark mode.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://anilseervi.github.io/NeumiAnalogClock/"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/NeumiAnalogClock"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a
+								href="https://anilseervi.github.io/NeumiAnalogClock/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/Neumorphism-Analog-Clock.jpg"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+					<!-- Each .row is a project -->
+					<article class="row">
+						<div class="project-wrapper__text">
+							<h3 class="project-wrapper__text-title">MiniFolio</h3>
+							<p class="project-wrapper__text-info">
+								A Simple Portfolio website of mine.
+							</p>
+							<p class="project-wrapper__text-info">
+								I've used only HTML5 and CSS3 for this website. It has some cool
+								animation effects for hovers.
+							</p>
+							<div class="project-wrapper__text-btns">
+								<a
+									href="https://anilseervi.github.io/Website/"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn cta-btn--hero cta-btn--projects"
+									>See Live</a
+								>
+								<a
+									href="https://github.com/AnilSeervi/Website"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="cta-btn text-color-main"
+									>Source Code</a
+								>
+							</div>
+						</div>
+						<div class="project-wrapper__image">
+							<a
+								href="https://anilseervi.github.io/Website/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<div class="thumbnail rounded">
+									<img
+										src="./assets/Website.jpg"
+										class="img-fluid"
+										alt="Project Image"
+										loading="lazy"
+									/>
+								</div>
+							</a>
+						</div>
+					</article>
+					<!-- /END Project -->
+				</div>
+			</div>
+		</section>
+		<!-- End Projects Section -->
+		<!-- Contact Section -->
+		<section id="contact">
+			<div class="container">
+				<h2 class="section-title">Contact</h2>
+				<div class="contact-wrapper">
+					<p class="contact-wrapper__text">Have something for me to build?</p>
+					<a
+						href="mailto:anil13112000@gmail.com"
+						class="cta-btn cta-btn--resume"
+						>Let's get building!</a
+					>
+				</div>
+			</div>
+		</section>
+		<!-- END Contact Section -->
+		<!-- Footer Section -->
+		<footer>
+			<div class="container">
+				<a href="#hero" class="back-to-top" aria-label="go back to top">
+					<svg
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke="#fff"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M5 15l7-7 7 7"
+						/>
+					</svg>
+				</a>
+				<nav class="social-links">
+					<a
+						href="https://twitter.com/linASeervi"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<svg
+							fill="#fff"
+							class="svg-twitter"
+							role="img"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>Twitter</title>
+							<path
+								d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+							/>
+						</svg>
+					</a>
+					<a
+						href="https://dev.to/anilseervi"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<svg
+							class="svg-dev-to"
+							fill="#fff"
+							role="img"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>dev.to</title>
+							<path
+								d="M7.42 10.05c-.18-.16-.46-.23-.84-.23H6l.02 2.44.04 2.45.56-.02c.41 0 .63-.07.83-.26.24-.24.26-.36.26-2.2 0-1.91-.02-1.96-.29-2.18zM0 4.94v14.12h24V4.94H0zM8.56 15.3c-.44.58-1.06.77-2.53.77H4.71V8.53h1.4c1.67 0 2.16.18 2.6.9.27.43.29.6.32 2.57.05 2.23-.02 2.73-.47 3.3zm5.09-5.47h-2.47v1.77h1.52v1.28l-.72.04-.75.03v1.77l1.22.03 1.2.04v1.28h-1.6c-1.53 0-1.6-.01-1.87-.3l-.3-.28v-3.16c0-3.02.01-3.18.25-3.48.23-.31.25-.31 1.88-.31h1.64v1.3zm4.68 5.45c-.17.43-.64.79-1 .79-.18 0-.45-.15-.67-.39-.32-.32-.45-.63-.82-2.08l-.9-3.39-.45-1.67h.76c.4 0 .75.02.75.05 0 .06 1.16 4.54 1.26 4.83.04.15.32-.7.73-2.3l.66-2.52.74-.04c.4-.02.73 0 .73.04 0 .14-1.67 6.38-1.8 6.68z"
+							/>
+						</svg>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/anilseervi"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<svg
+							class="svg-linkedin"
+							fill="#fff"
+							role="img"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>LinkedIn</title>
+							<path
+								d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+							/>
+						</svg>
+					</a>
+					<a
+						href="https://codepen.io/anilseervi"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<svg
+							class="svg-codepen"
+							fill="#fff"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>Codepen</title>
+							<path
+								d="M21.838 8.445c0-.001-.001-.001 0 0l-.003-.004-.001-.001v-.001a.809.809 0 0 0-.235-.228l-9.164-6.08a.834.834 0 0 0-.898 0L2.371 8.214A.786.786 0 0 0 2 8.897v6.16a.789.789 0 0 0 .131.448v.001l.002.002.01.015v.002h.001l.001.001.001.001c.063.088.14.16.226.215l9.165 6.082a.787.787 0 0 0 .448.139.784.784 0 0 0 .45-.139l9.165-6.082a.794.794 0 0 0 .371-.685v-6.16a.793.793 0 0 0-.133-.452zm-9.057-4.172 6.953 4.613-3.183 2.112-3.771-2.536V4.273zm-1.592 0v4.189l-3.771 2.536-3.181-2.111 6.952-4.614zm-7.595 6.098 2.395 1.59-2.395 1.611v-3.201zm7.595 9.311-6.96-4.617 3.195-2.15 3.765 2.498v4.269zm.795-5.653-3.128-2.078 3.128-2.105 3.131 2.105-3.131 2.078zm.797 5.653v-4.27l3.766-2.498 3.193 2.15-6.959 4.618zm7.597-6.11-2.396-1.611 2.396-1.59v3.201z"
+							></path>
+						</svg>
+					</a>
 
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              class="svg-github"
-              fill="#fff"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>GitHub</title>
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-              />
-            </svg>
-          </a>
-        </nav>
-        <hr />
-        <p class="footer__text">
-          &copy; <span id="year"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
-        </p>
-      </div>
-    </footer>
-    <!-- END Footer Section -->
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script type="module" src="/main.js"></script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-  </body>
+					<a
+						href="https://github.com/AnilSeervi"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<svg
+							class="svg-github"
+							fill="#fff"
+							role="img"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>GitHub</title>
+							<path
+								d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+							/>
+						</svg>
+					</a>
+				</nav>
+				<hr />
+				<p class="footer__text">
+					&copy; <span id="year"></span> - Template by
+					<a
+						href="https://github.com/AnilSeervi"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Anil Seervi</a
+					>. <br />Made with &hearts;
+				</p>
+			</div>
+		</footer>
+		<!-- END Footer Section -->
+		<script>
+			document.getElementById('year').textContent = new Date().getFullYear();
+		</script>
+		<script type="module" src="/src/main.js"></script>
+		<script src="./javascript/vanilla-tilt.min.js"></script>
+	</body>
 </html>
